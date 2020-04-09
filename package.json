@@ -10,6 +10,11 @@
     "e2e": "ng e2e",
     "commit": "git add . && git cz"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.1",
@@ -52,5 +57,9 @@
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
   },
-"husky":{"hooks":{"commit-msg":"commitlint -E HUSKY_GIT_PARAMS"}}
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
